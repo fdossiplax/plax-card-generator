@@ -317,40 +317,40 @@
       if (d.nome) {
         ctx.fillStyle = '#ffffff';
         ctx.font = 'bold 54px "Assistant", Arial, sans-serif';
-        const maxW = 390;
+        const maxW = 393;
         let fontSize = 54;
         while (ctx.measureText(d.nome).width > maxW && fontSize > 28) {
           fontSize--;
           ctx.font = 'bold ' + fontSize + 'px "Assistant", Arial, sans-serif';
         }
-        ctx.fillText(d.nome, 52, 122);
+        ctx.fillText(d.nome, 47, 123);
       }
 
       // Posizione lavorativa — max larghezza area blu ~420px
       if (d.ruolo) {
         ctx.fillStyle = '#fdc400';
         ctx.font = 'bold 33px "Assistant", Arial, sans-serif';
-        const maxW = 390;
+        const maxW = 393;
         let fontSize = 33;
         while (ctx.measureText(d.ruolo).width > maxW && fontSize > 18) {
           fontSize--;
           ctx.font = 'bold ' + fontSize + 'px "Assistant", Arial, sans-serif';
         }
-        ctx.fillText(d.ruolo, 52, 170);
+        ctx.fillText(d.ruolo, 47, 168);
       }
 
       // Mobile
       if (d.mobile) {
         ctx.font = '26px "Assistant", Arial, sans-serif';
         ctx.fillStyle = '#ffffff';
-        ctx.fillText('Mobile: ' + d.mobile, 52, 242);
+        ctx.fillText('Mobile: ' + d.mobile, 47, 192);
       }
 
       // Email
       if (d.email) {
         ctx.font = '26px "Assistant", Arial, sans-serif';
         ctx.fillStyle = '#ffffff';
-        ctx.fillText('Email: ' + d.email, 52, 282);
+        ctx.fillText('Email: ' + d.email, 47, 220);
       }
     }
 
