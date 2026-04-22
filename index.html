@@ -321,7 +321,7 @@
         let fontSize = 54;
         while (ctx.measureText(d.nome).width > maxW && fontSize > 28) {
           fontSize--;
-          ctx.font = 'bold ' + fontSize + 'px "Assistant", Arial, sans-serif';
+          ctx.font = fontSize + 'px "Assistant", Arial, sans-serif';
         }
         ctx.fillText(d.nome, 47, 123);
       }
@@ -329,12 +329,12 @@
       // Posizione lavorativa — max larghezza area blu ~420px
       if (d.ruolo) {
         ctx.fillStyle = '#fdc400';
-        ctx.font = 'bold 33px "Assistant", Arial, sans-serif';
+        ctx.font = '33px "Assistant", Arial, sans-serif';
         const maxW = 393;
         let fontSize = 33;
         while (ctx.measureText(d.ruolo).width > maxW && fontSize > 18) {
           fontSize--;
-          ctx.font = 'bold ' + fontSize + 'px "Assistant", Arial, sans-serif';
+          ctx.font = fontSize + 'px "Assistant", Arial, sans-serif';
         }
         ctx.fillText(d.ruolo, 47, 168);
       }
@@ -343,14 +343,14 @@
       if (d.mobile) {
         ctx.font = '26px "Assistant", Arial, sans-serif';
         ctx.fillStyle = '#ffffff';
-        ctx.fillText('Mobile: ' + d.mobile, 47, 192);
+        ctx.fillText('Mobile: ' + d.mobile, 47, 240);
       }
 
       // Email
       if (d.email) {
         ctx.font = '26px "Assistant", Arial, sans-serif';
         ctx.fillStyle = '#ffffff';
-        ctx.fillText('Email: ' + d.email, 47, 220);
+        ctx.fillText('Email: ' + d.email, 47, 278);
       }
     }
 
