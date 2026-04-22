@@ -151,11 +151,9 @@
         <select id="f-sede" onchange="onSedeChange()">
           <option value="">— Seleziona la sede —</option>
           <option value="trezzo">Trezzo sull'Adda (MI) — Italy</option>
-          <option value="zola">Zola Predosa (BO) — Italy</option>
           <option value="loreto">Loreto (AN) — Italy</option>
+          <option value="bologna">Bologna — Italy</option>
           <option value="arad">Arad — Romania</option>
-          <option value="zaghouan">Zaghouan — Tunisia</option>
-          <option value="benarous">Ben Arous — Tunisia</option>
           <option value="suzhou">Suzhou — China</option>
         </select>
         <div class="sede-info" id="sede-info"></div>
@@ -224,13 +222,11 @@
 
     // ─── Mappa sedi → file PNG ────────────────────────────────────────────────
     const SEDI = {
-      trezzo:   { label: "Trezzo sull'Adda (MI) · Italy", file: "card-bg-trezzo.png"   },
-      zola:     { label: "Zola Predosa (BO) · Italy",      file: "card-bg-zola.png"     },
-      loreto:   { label: "Loreto (AN) · Italy",            file: "card-bg-loreto.png"   },
-      arad:     { label: "Arad · Romania",                 file: "card-bg-arad.png"     },
-      zaghouan: { label: "Zaghouan · Tunisia",             file: "card-bg-zaghouan.png" },
-      benarous: { label: "Ben Arous · Tunisia",            file: "card-bg-benarous.png" },
-      suzhou:   { label: "Suzhou · China",                 file: "card-bg-suzhou.png"   },
+      trezzo:  { label: "Trezzo sull'Adda (MI) · Italy", file: "card-bg-trezzo.png"  },
+      loreto:  { label: "Loreto (AN) · Italy",           file: "card-bg-loreto.png"  },
+      bologna: { label: "Bologna · Italy",               file: "card-bg-bologna.png" },
+      arad:    { label: "Arad · Romania",                file: "card-bg-arad.png"    },
+      suzhou:  { label: "Suzhou · China",                file: "card-bg-suzhou.png"  },
     };
 
     const bgCache = {};
