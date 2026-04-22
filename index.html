@@ -171,8 +171,8 @@
       <div class="field">
         <label>Posizione lavorativa</label>
         <input type="text" id="f-ruolo" placeholder="Es. Account Manager"
-               maxlength="35" oninput="onInput('f-ruolo', 'counter-ruolo', MAX_RUOLO)"/>
-        <div class="char-counter" id="counter-ruolo"><span>Max 35 caratteri</span><span>0 / 35</span></div>
+               maxlength="55" oninput="onInput('f-ruolo', 'counter-ruolo', MAX_RUOLO)"/>
+        <div class="char-counter" id="counter-ruolo"><span>Max 55 caratteri</span><span>0 / 55</span></div>
       </div>
 
       <div class="field">
@@ -204,7 +204,7 @@
   <script>
     // ─── Limiti caratteri ─────────────────────────────────────────────────────
     const MAX_NOME  = 22;   // corrisponde a "Testststststt" (13) + margine sicuro
-    const MAX_RUOLO = 35;   // max 35 caratteri, font si riduce automaticamente
+    const MAX_RUOLO = 55;   // max 55 caratteri, font si riduce automaticamente
 
     function onInput(inputId, counterId, max) {
       const input   = document.getElementById(inputId);
